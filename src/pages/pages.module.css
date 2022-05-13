@@ -1,0 +1,39 @@
+/* Home */
+
+.Home {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleBox {
+    position: relative;
+}
+
+.title {
+font-weight: 700;
+font-size: 72px;
+line-height: 1.1;
+}
+
+.titleSpan {
+    color: aliceblue;
+}
+
+.titleIcon {
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -57px;
+    display: block;
+}
+
+.form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form label {
+    margin-bottom: 20px;
+}
