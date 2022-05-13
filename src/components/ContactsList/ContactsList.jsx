@@ -40,7 +40,7 @@ function ContactsList() {
                 key={contact.id}
                 id={contact.id}
                 name={contact.name}
-                number={contact.phone}
+                number={contact.number}
               />
             )) }</ul>}
   

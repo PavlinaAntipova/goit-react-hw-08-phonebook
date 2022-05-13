@@ -14,8 +14,8 @@ function UserMenu() {
     return (
     <div className={s.UserMenu}>
         <img className={s.avatar} src={URL} alt="" width="32" />
-            <span >{`Welcome, ${userName}`}</span>
-        <button className={`button ${s.btn}`} type="button" onClick={()=> {dispatch(logout())}}>
+            <span className={s.welcome}>{`Welcome, ${userName}`}</span>
+        <button className={s.btn} type="button" onClick={()=> {dispatch(logout())}}>
         Logout
         </button>
   </div>

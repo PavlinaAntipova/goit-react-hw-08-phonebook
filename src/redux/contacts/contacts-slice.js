@@ -19,7 +19,7 @@ const contactsSlice = createSlice({
     extraReducers: {
         [getContacts.fulfilled]: (state, action) => { state.items = [...action.payload]; state.isLoading = false },
         [deleteContact.fulfilled]: (state, action) => { state.items = [...state.items.filter(contact => contact.id !== action.payload.id)]; state.isLoading = false },
-        [addContact.fulfilled]: (state, action) => { state.items = [...action.payload]; state.isLoading = false },
+        [addContact.fulfilled]: (state, action) => { state.items.push(action.payload); state.isLoading = false },
         [getContacts.rejected]: (state, action) => { state.error = action; state.isLoading = false },
         [deleteContact.rejected]: (state, action) => { state.error = action; state.isLoading = false },
         [addContact.rejected]: (state, action) => { state.error = action; state.isLoading = false },

@@ -10,7 +10,7 @@ function AppBar() {
 
     return (
         <>
-            {isLoggedIn ? <div div className={s.AppBar}>
+            {isLoggedIn ? <div className={s.AppBar}>
                 <Navigation />
                 <UserMenu />
             </div> : <AuthNav />}
